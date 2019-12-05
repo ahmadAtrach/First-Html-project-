@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Chef</title>
+    <link rel="icon" type="image/png" href="logo2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="Cfont">
+    <div id="f"></div>
+<div class="navbar navbar-dark animated bounce delay-1s  navbar-expand-sm fixed-bottom"> <div class="bg-orange border-raduis-round" ><a class="far fa-arrow-alt-circle-up text-white p-3 " href="#f"></a></div></div>
+<!--this is registration div on button in the register in small big screen -->
+  <div  class="modal  Cfont bg-orange opacity" id="registermodal" >
+        <div class="modal-dialog animated zoomIn bg-black raduis  ">
+          <div class="modal-content  bg-black raduis  ">
+            <div class="modal-header">
+              <h4 class="text-white">Register</h4>
+              <button type="button" class="close text-white" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="container mt-5 mb-5 text-white pl-5 pr-5">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              id="fname"
+              class="form-control"
+              placeholder="enter your first name"
+              required
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lname">Last Name:</label>
+            <input
+              type="text"
+              id="lname"
+              class="form-control"
+              placeholder="enter your last name"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><img src="person.png" width="90%"></span>
+            </div>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+        </div>  
+        <div class="form-group">
+           <label for="pwd">Password:</label>
+           <div class="input-group">
+              <div class="input-group-prepend">
+              <span class="input-group-text"><img src="password.png" width="80%"></span>
+            </div>
+          <input type="password" id="pwd" class="form-control" required />
+           </div>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <select id="address" class="form-control">
+            <option value="1">Tripoli</option>
+            <option value="2" selected>Beirut</option>
+            <option value="3">Jounieh </option>
+            <option value="4">Batroun</option>
+          </select>
+        </div>
+        <div class="form-group ">
+          <div class="custom-control custom-radio">
+     <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" required>
+  <label class="custom-control-label" for="customRadio1">Male</label>
+      </div>
+    <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" required>
+  <label class="custom-control-label" for="customRadio2">Female</label>
+      </div>
+        </div>
+        <div class="form-group">
+          <p>Intrest:</p>
+          <div class="form-check form-check-inline">
+            <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label m-2" for="customCheck1">Design</label>
+  </div></div>
+  <div class="form-check form-check-inline">
+  <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck2">
+  <label class="custom-control-label m-2" for="customCheck2">Cooking</label>
+  </div></div>
+  <div class="form-check form-check-inline">
+  <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck3">
+  <label class="custom-control-label m-2" for="customCheck3">Technique</label>
+  </div></div>
+          
+          
+        </div>
+        
+        <div class="modal-footer">
+              <button class="btn orange bg-white" type="submit">Register</button>
+                <button
+          class="btn bg-orange text-white"
+          data-target="#loginermodal"
+          data-toggle="modal"
+           data-dismiss="modal"
+         
+        >
+          LogIN
+        </button>
+            </div>
+      </form>
+    </div>  
+            
+          </div>
+        </div>
+      </div>
+<!--this is login div on button in the register in small and big screen -->
+  <div class="modal Cfont bg-orange opacity" id="loginermodal" >
+        <div class="modal-dialog animated  zoomIn bg-black raduis  ">
+          <div class="modal-content bg-black raduis  ">
+            <div class="modal-header">
+              <h4 class="text-white">Register</h4>
+              <button type="button" class="close text-white" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="container mt-5 mb-5 text-white pl-5 pr-5">
+      <form>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><img src="person.png" width="90%"></span>
+            </div>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+           <label for="pwd">Password:</label>
+           <div class="input-group">
+              <div class="input-group-prepend">
+              <span class="input-group-text"><img src="password.png" width="80%"></span>
+            </div>
+          <input type="password" id="pwd" class="form-control" required />
+           </div>
+        </div>
+        <div class="modal-footer">
+              <button
+          class=" btn  orange bg-white"
+          data-target="#registermodal"
+          data-toggle="modal"
+           data-dismiss="modal"
+        >
+          Register
+        </button>
+              <button class="btn bg-orange text-white"  type="submit" >LogIN</button>
+            </div>
+      </form>
+    </div>  
+            
+          </div>
+        </div>
+      </div>
+<div class="bg-black">
+<!--this is the first div abouve the nave bar-->
+
+        <div>  <h1 class=" off"> &copy; Offecial website of SmartChef </h1></div>
+<!-- #this is the navbar# -->
+   <nav class="navbar cssnav navbar-dark navbar-expand-xl sticky-top">
+      <a href="index.html" class="navbar-brand">
+        <img src="logo2.png" alt="html logo" height="48px " class="d-block logo2  d-md-none" />
+        <img src="logo2.png" alt="html logo" height="30px" class=" d-none  d-lg-none d-md-block" />
+        <img src="logo2.png" alt="html logo" height="48px" class=" d-lg-block d-none" />
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-target=".collapsible-navbar"
+        data-toggle="collapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div  class="collapse collapsible-navbar navbar-collapse">
+        <ul class="navbar-nav ">
+     
+          <li class="nav-item pl-3"><a href="index.html" class="nav-link active"><span><i class="fa fa-home animated heartBeat"></i></span> Home</a></li>
+          <li class="nav-item pl-3">
+            <a href="recipe.html" class="nav-link "><span><i class="fa fa-heart"></i></span> Recipies</a>
+          </li>
+          <li class="nav-item pl-3"><a href="aboutus.html" class="nav-link"><span><i class="fa fa-user"></i></span> About us</a></li>
+          <li class="nav-item pl-3 "><a href="contact.html" class="nav-link"><span><i class="fa fa-inbox"></i></span> Contact us</a></li>
+          <form class=" pl-4 form-inline d-xl-none d-block col-8 justify-content-end">
+          <div class="input-group">
+            <div class="input-group-append">
+              <button class="btn fa fa-search bg-orange"></button>
+            </div>
+            <input
+              type="text"
+              placeholder="search..."
+              class="form-control"
+            />
+            
+          </div>
+
+     </form>     
+        </ul>
+      
+      </div>
+        <form class=" form-inline d-xl-block d-none   justify-content-end">
+          <div class="input-group">
+            <input
+              type="text"
+              placeholder="search..."
+              class="form-control"
+            />
+            <div class="input-group-append">
+              <button class="btn fa fa-search bg-orange text-white"></button>
+            </div>
+          </div></form>   </nav>
+<!--this is the alert-->
+      <div class="container ">
+          <div class="alert bg-orange text-white animated fadeInLeft" type="alert">
+            we are using your cookies to improve your experience in our website
+            <button class="close" data-dismiss="alert">&times;</button>
+          </div></div>
+<!-- #this backround in a big size register button# -->
+	<div class="register  d-md-block d-none ">  
+          <h3 class="form d-sm-block d-none">
+           Find The Best Recipies. </h3>   
+    
+          <h5 class="form2 d-sm-block d-none">
+           " Join the biggest community of cooking <br/>
+             and smart devices help you in it "</h5> 
+            <div class="form-inline">
+          <button
+          class=" registerbutton"
+          data-target="#registermodal"
+          data-toggle="modal">
+          Register
+        </button>
+              </div>
+               </div>
+<!-- #this backround in a small size register button -->
+	<div class="register pt-5 d-block d-md-none ">
+    
+  <h3 class="formsm ">
+   Find The Best Recipies.    
+  </h3>
+  <h5 class="form2sm ">
+   Join the biggest community of cooking <br/>
+    and smart devices help you in it 
+    </h5>
+    <div class="form-inline">
+          <button
+          class=" registerbutton"
+          data-target="#registermodal"
+          data-toggle="modal"
+        >
+          Register
+        </button>
+      </div>
+  </div>
+<!-- this is who are we -->
+	<div class=" div d-flex text-center ">
+   <h1 class="mx-auto Cfont pt-6">Who are we ?</h1> 
+    </div>  
+<!-- #those are the cards -->    
+ 	<div id="nature" class="carousel slide " data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card  col-md-12 bg-black text-white Cfont pt-6 pb-6"><div class=" mx-auto"><img src="fatima.png" width="90%"></div> <div class="mx-auto text-center pr-3 "  ><h3>Fatima Matar</h3> <br/> <p class="orange"> Graphic designer <br/><span class="text-white"> Fatima Matar a graghic designer grauduated from LIU in Graphic Design she is so creative and talented in every thinh she make it is our ower</span></p></div></div>
+            </div>
+            <div class="carousel-item">
+              <div class=" card col-md-12 bg-black text-white Cfont pt-6 pb-6 "><div class=" mx-auto"><img src="ahmad.png" width="90%"></div> <div class="mx-auto text-center pr-3 "  ><h3>Ahmad Atrach </h3> <br/> <p class="orange">Computer Scientist<br/><span class="text-white"> Ahmad Atrach is computer scientist ungraduated  studying in LIU.He cofounded Smart Chef in 2018  </span></p></div></div>
+            </div>
+            <div class="carousel-item">
+              <div class=" card col-md-12 bg-black text-white Cfont pt-6 pb-6 "><div class=" mx-auto"><img src="safa.png" width="90%"></div> <div class="mx-auto text-center pr-3 "  ><h3>Safa Marhaba</h3> <br/> <p class="orange"> Communication Engineer <br/><span class="text-white"> Safa Marhaba is a communication engineer graduated from LIU. She is hard worker smart and have very unique problems/solutions strategies. </span></p></div></div>
+            </div>
+          </div>
+          <a href="#nature" class="carousel-control-prev" data-slide="prev">
+            <span class=""></span>
+          </a>
+          <a href="#nature" class="carousel-control-next" data-slide="next">
+            <span class=""></span>
+          </a>
+        </div>   
+  <div class="bg-white">
+<!--this the title of the feature-->
+    	<div class=" d-flex text-center">
+      <h1 class="mx-auto Cfont pt-6 ">Our F<span class="border-bottom-orange">eatur</span>es Are</h1> </div>  
+<!--this is our feature--> 
+	<div class="container"> 
+	  <div class="row col-12 mx-auto  pb-6 pt-6">
+        <div class="card  col-md-6 col-xl-3 col-12  Cfont"><div class=" mx-auto"><img class="animated flipInY delay-0s" src="1.png" width="100%"></div> <div class="mx-auto text-center pr-3 "  ><h3>High Quality</h3> <br/> <p class="" style="color: gray;"> Graphic designer <br/><span class=""> Fatima Matar a graghic designer grauduated from LIU in Graphic Design she is </span></p></div></div>
+        <div class="card  col-md-6 col-xl-3 col-12 Cfont"><div class=" mx-auto"><img class="animated flipInY delay-1s" src="2.png" width="100%"></div> <div class="mx-auto text-center pr-3 "  ><h3>Fatima Matar</h3> <br/> <p class="" style="color: gray;"> Graphic designer <br/><span class=""> Fatima Matar a graghic designer grauduated from LIU in Graphic Design she is </span></p></div></div>
+        <div class="card  col-md-6 col-xl-3 col-12  Cfont"><div class=" mx-auto"><img class="animated flipInY delay-2s" src="1.png" width="100%"></div> <div class="mx-auto text-center pr-3"  ><h3>Fatima Matar</h3> <br/> <p class="" style="color: gray;"> Graphic designer <br/><span class=""> Fatima Matar a graghic designer grauduated from LIU in Graphic Design she is </span></p></div></div>
+        <div class="card  col-md-6 col-xl-3 col-12  Cfont"><div class=" mx-auto"><img class="animated flipInY delay-3s" src="1.png" width="100%"></div> <div class="mx-auto text-center pr-3 "  ><h3>Fatima Matar</h3> <br/> <p class="" style="color: gray;" > Graphic designer <br/><span class=""> Fatima Matar a graghic designer grauduated from LIU in Graphic Design she is</span></p></div></div>
+          </div>
+      </div></div></div>
+<!-- this is our product-->
+	<div class=" div d-flex text-center">
+   <h1 class="mx-auto Cfont pt-6">This is Our Product</h1> 
+    </div>  
+<!-- #those are products cards -->    
+ 		<div class="row col-12 bg-black mx-auto  pb-6 pt-6 ">
+	  	<div class="container row mx-auto " >
+        <div class="card bg-black col-md-5 col-xl-4 col-8 mx-auto rotate-45 pt-7 justify-content-center "><img src="Picture3.png" width="34%"></div>
+        <div class="card bg-black col-md-6 text-white pt-7 col-xl-5 col-12 Cfont d-block"><div class="mx-auto text-center  pr-3 "  ><h2>Download Our Application lorem</h2><p class=""> <span class="text-white"> Fatima Matar a graghic designer grauduated from LIU in Graphic Design she is Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</span></p></div></div>
+        <div class="bg-orange mx-auto" style="height: 3px; width: 50%"> </div> </div></div>		 
+<!--this is our application-->
+    <div class=" text-center bg-orange text-white pt-6 pb-6 col-xl-4  d-sm-block d-xl-none ">
+  		 <h4 class="mx-auto Cfont">Our pr<span class="border-bottom-white">oduct</span>nse Are</h4></div> 
+<!--this is our application cards--> 
+	  <div class="row col-12 bg-orange mx-auto  pb-6 pt-6 ">
+	  	<div class="container row mx-auto" >
+	  	<div class=" text-center bg-orange text-white rotate col-xl-4  d-none d-xl-block ">
+  		 <h4 class="mx-auto Cfont">Our Ap<span class="border-bottom-white">plcatio</span>nse Are</h4></div> 
+        <div class="card bg-orange col-md-6 col-xl-3 col-8 mx-auto  Cfont "><img src="picture2.png" width="100%" "></div>
+        <div class="card bg-orange col-md-6 pt-7 col-xl-5 col-12 Cfont d-block"><div class="mx-auto text-center  pr-3 "  ><h2>Download Our Application</h2><p class=""> <span class="text-white"> Fatima Matar a graghic designer grauduated from LIU in Graphic Design she is </span></p><a class="pr-5 " href="https://play.google.com/"><img src="play.png"></a><a href="https://www.apple.com/ios/app-store"><img src="appstore.png"></a></div></div></div></div>
+<!--this is the footer-->
+		<div class="bg-black d-flex"> 
+				<div class="containe">
+ 				 <img src="facebook.png" alt="Avatar" class="image">
+ 				<a href="http://www.facebook.com"><div class="overlay">
+  				 <div class="text"><p class="size1">Facebook</p></div>
+ 						 </div></a>
+								</div>
+								<div class="containe">
+ 				 <img src="gmail.png" alt="Avatar" class="image">
+ 			 <a href="http://www.gmail.com">	<div class="overlay">
+  				 <div class="text"><p class="size1">Gmail</p></div>
+ 						 </div></a>
+								</div>
+								<div class="containe">
+ 				 <img src="instagram.png" alt="Avatar" class="image">
+ 				<a href="http://www.instagram.com"><div class="overlay">
+  			<div class="text"><p class="size1">Instagram</p></div>
+ 						 </div></a>
+								</div>
+								<div class="containe">
+ 				 <img src="twitter.png" alt="Avatar" class="image">
+ 			<a href="http://www.twitter.com">	<div class="overlay">
+  				  <div class="text"><p class="size1">Twitter</p></div>
+ 						 </div></a>
+								</div>
+
+		 	</div>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>
